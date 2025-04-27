@@ -1,2 +1,3 @@
 # MRAN
-MRAN is a lightweight 3D CNN using hierarchical transfer learning for multiscale permeability prediction in carbonate rocks. This repository includes the MRAN model, benchmark CNNs, dataset construction scripts, training code (PyTorch), and sample datasets.
+
+**MRAN (Multiscale Resolution-Aware Network)** is a lightweight, custom-designed 3D convolutional neural network implemented in **PyTorch**. It leverages hierarchical transfer learning to predict permeability from multiscale, 3D micro-CT images of carbonate rocks, effectively bridging the trade-off between resolution and field-of-view. This repository includes the MRAN architecture, benchmark CNN models (3D ResNet50, ResNeXt50, DenseNet201), scripts for dataset construction, training, and evaluation, and sample datasets, enabling reproducibility and further development in digital rock physics and porous media applications.
