@@ -49,7 +49,7 @@ https://doi.org/10.1016/j.advwatres.2026.105311
 }
 
 
-```markdown
+
 ## 📜 License
 
 This project is released under the MIT License.  
@@ -62,3 +62,13 @@ For questions, discussions, or collaborations, feel free to contact:
 **Iman Nabipour**  
 Email: i.nabipour1988@gmail.com  
 GitHub: https://github.com/ImanNabipour
+
+
+Download Dataset:
+
+Google drive link for the 3D normalized distance maps carbonate micro-CT images: https://drive.google.com/file/d/1G2HMvpO0z4J9GwioNVdElAW6B-nTVY5B/view?usp=sharing
+
+Google drive link for the 3D binary maps carbonate micro-CT images: https://drive.google.com/file/d/1brAfMJFHogrkf842fn_DUb2lYNXV-cux/view?usp=sharing
+
+After downloading, extract the dataset and place it in a data/ directory.
+
