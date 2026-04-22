@@ -1,6 +1,12 @@
 # MRAN
 # Multiscale 3D CNNs for Predicting Permeability from 3D Micro-CT Carbonate Rock Images
 
+
+![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.advwatres.2026.105311-blue)
+![Python](https://img.shields.io/badge/Python-3.8%2B-brightgreen)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.9%2B-orange)
+
+
 **MRAN (Multiscale Resolution-Aware Network)** is a lightweight, custom-designed 3D convolutional neural network implemented in **PyTorch**. It leverages hierarchical transfer learning to predict permeability from multiscale, 3D micro-CT images of carbonate rocks, effectively bridging the trade-off between resolution and field-of-view. This repository includes the MRAN architecture, benchmark CNN models (3D ResNet50, ResNeXt50, DenseNet201), scripts for dataset construction, training, and evaluation, and sample datasets, enabling reproducibility and further development in digital rock physics and porous media applications.
 
 
@@ -27,7 +33,35 @@ All networks are trained using a **Fine-Intermediate-Coarse (FR-IR-CR) hierarchi
 - Model complexity
 - Data scaling effects
 
+
+### Key Features:
+- **MRAN Architecture:** Novel multiscale 3D CNN designed for permeability prediction
+- **Baseline Models:** ResNet50, ResNeXt50, and DenseNet201 implementations
+- **Transfer Learning Framework:** Hierarchical FR→IR→CR pipeline
+- **LBM Integration:** Permeability data computed using lattice Boltzmann method
+- **3D Micro-CT Processing:** Specialized preprocessing for carbonate rock images
+
+---
+
 ## 🗂️ Repository Structure
+my-research-project/
+
+├── README.md # Project documentation
+
+├── requirements.txt # Python dependencies
+
+├── LICENSE # MIT License
+
+├── ProposedModel.py # MRAN model implementation
+
+├── ResNet.py # ResNet50 3D implementation
+
+├── ResNeXt.py # ResNeXt50 3D implementation
+
+├── DenseNet.py # DenseNet201 3D implementation
+
+├── data/ # Dataset directory (download separately)
+
 
 ## 📝 Citation
 
@@ -64,11 +98,52 @@ Email: i.nabipour1988@gmail.com
 GitHub: https://github.com/ImanNabipour
 
 
+📊 Dataset
+
+The dataset consists of 3D micro-CT images of carbonate rocks with corresponding permeability values computed using the lattice Boltzmann method (LBM).
 Download Dataset:
 
 Google drive link for the 3D normalized distance maps carbonate micro-CT images: https://drive.google.com/file/d/1G2HMvpO0z4J9GwioNVdElAW6B-nTVY5B/view?usp=sharing
 
 Google drive link for the 3D binary maps carbonate micro-CT images: https://drive.google.com/file/d/1brAfMJFHogrkf842fn_DUb2lYNXV-cux/view?usp=sharing
 
-After downloading, extract the dataset and place it in a data/ directory.
+Dataset Structure:
 
+    Fine Resolution (FR) images
+    Intermediate Resolution (IR) images
+    Coarse Resolution (CR) images
+    Permeability labels (mD)
+
+After downloading, extract the dataset into the data/ directory.
+
+Prerequisites
+
+    Python 3.8 or higher
+    CUDA-capable GPU (recommended)
+
+📦 Dependencies
+
+    PyTorch >= 1.9.0
+    torchvision >= 0.10.0
+    scikit-learn >= 0.24.0
+    pandas >= 1.3.0
+    numpy >= 1.21.0
+    matplotlib >= 3.4.0
+    tifffile >= 2021.7.0
+    pathlib
+
+Full list available in requirements.txt
+
+## Transfer Learning Pipeline
+
+The hierarchical transfer learning framework follows this sequence:
+
+    Fine Resolution (FR): Train on high-resolution images
+    Intermediate Resolution (IR): Transfer weights from FR model
+    Coarse Resolution (CR): Transfer weights from IR model
+
+Each script includes preprocessing, data loading, hyperparameter configuration, loss functions, model architecture, and training loops.
+
+---
+
+Thank you for using this repository! If you find it useful, please consider starring ⭐ the project on GitHub.
