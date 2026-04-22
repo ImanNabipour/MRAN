@@ -4,7 +4,7 @@
 
 ![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.advwatres.2026.105311-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-brightgreen)
-![PyTorch](https://img.shields.io/badge/PyTorch-1.9%2B-orange)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.13%2B-orange)
 
 
 **MRAN (Multiscale Resolution-Aware Network)** is a lightweight, custom-designed 3D convolutional neural network implemented in **PyTorch**. It leverages hierarchical transfer learning to predict permeability from multiscale, 3D micro-CT images of carbonate rocks, effectively bridging the trade-off between resolution and field-of-view. This repository includes the MRAN architecture, benchmark CNN models (3D ResNet50, ResNeXt50, DenseNet201), scripts for dataset construction, training, and evaluation, and sample datasets, enabling reproducibility and further development in digital rock physics and porous media applications.
@@ -123,14 +123,13 @@ Prerequisites
 
 📦 Dependencies
 
-    PyTorch >= 1.9.0
-    torchvision >= 0.10.0
-    scikit-learn >= 0.24.0
-    pandas >= 1.3.0
-    numpy >= 1.21.0
-    matplotlib >= 3.4.0
-    tifffile >= 2021.7.0
-    pathlib
+    PyTorch >= 1.13
+    torchvision >= 0.13
+    scikit-learn >= 1.0.2
+    pandas >= 1.3.4
+    numpy >= 1.21.5
+    matplotlib >= 3.5.3
+    tifffile >= 2021.7.2
 
 Full list available in requirements.txt
 
