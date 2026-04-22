@@ -26,3 +26,39 @@ All networks are trained using a **Fine-Intermediate-Coarse (FR-IR-CR) hierarchi
 - Architecture choice
 - Model complexity
 - Data scaling effects
+
+## 🗂️ Repository Structure
+
+## 📝 Citation
+
+If you use this code or datasets in your research, please cite the following paper:
+
+Nabipour, I., Raoof, A., & Qajar, J. (2026). Resolution-aware multiscale 3D CNNs for permeability estimation in carbonate rocks: an architecture-agnostic transfer-learning framework. *Advances in Water Resources*, 182, 105311.  
+https://doi.org/10.1016/j.advwatres.2026.105311
+
+**BibTeX:**
+```bibtex
+@article{Nabipour2026ResolutionAware,
+  title={Resolution-aware multiscale 3D CNNs for permeability estimation in carbonate rocks: an architecture-agnostic transfer-learning framework},
+  author={Nabipour, Iman and Raoof, Amir and Qajar, Jafar},
+  journal={Advances in Water Resources},
+  volume={182},
+  pages={105311},
+  year={2026},
+  doi={10.1016/j.advwatres.2026.105311}
+}
+
+
+```markdown
+## 📜 License
+
+This project is released under the MIT License.  
+See the `LICENSE` file for details.
+
+## 📬 Contact
+
+For questions, discussions, or collaborations, feel free to contact:
+
+**Iman Nabipour**  
+Email: i.nabipour1988@gmail.com  
+GitHub: https://github.com/ImanNabipour
