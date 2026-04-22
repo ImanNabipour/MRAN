@@ -37,7 +37,7 @@ Nabipour, I., Raoof, A., & Qajar, J. (2026). Resolution-aware multiscale 3D CNNs
 https://doi.org/10.1016/j.advwatres.2026.105311
 
 **BibTeX:**
-```bibtex
+
 @article{Nabipour2026ResolutionAware,
   title={Resolution-aware multiscale 3D CNNs for permeability estimation in carbonate rocks: an architecture-agnostic transfer-learning framework},
   author={Nabipour, Iman and Raoof, Amir and Qajar, Jafar},
