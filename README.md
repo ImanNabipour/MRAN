@@ -60,8 +60,6 @@ my-research-project/
 
 ├── DenseNet.py # DenseNet201 3D implementation
 
-├── data/ # Dataset directory (download separately)
-
 
 ## 📝 Citation
 
